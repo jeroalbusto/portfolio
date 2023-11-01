@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconscout/react-unicons": "^2.0.2",
     "@react-three/drei": "^9.88.10",
+    "boxicons": "^2.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
