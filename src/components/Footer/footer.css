@@ -18,7 +18,7 @@
 }
 
 .footer__link:hover{
-    color: var(--title-color-dark);
+    color: #BFC9CA ;
 }
 
 .footer__list{
@@ -34,6 +34,7 @@
     column-gap: 1.25rem;
 }
 
+
 .footer__social-link{
     background-color: var(--title-color);
     color: var(--container-color);
@@ -44,7 +45,7 @@
 }
 
 .footer__social-link:hover{
-    background-color: var(--title-color-dark);
+    background-color:#BFC9CA;
 }
 
 .footer__copy{

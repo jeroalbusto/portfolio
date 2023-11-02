@@ -14,11 +14,11 @@
 
     --hue:0;
     --sat:0%;
-    --title-color: hsl(var(--hue), var(--sat), 20%);
-    --title-color-dark:hsl(var(--hue), var(--sat),0%);
-    --text-color:hsl(var(--hue), var(--sat), 46%);
-    --body-color:hsl(var(--hue), var(--sat), 98%);
-    --container-color: #fff;
+    --title-color: #FBFCFC;
+    --title-color-dark: #283747;
+    --text-color: #FBFCFC; 
+    /* --body-color: rgb(27,59,223) linear-gradient(128deg, rgba(27,59,223,1) 10%, rgba(255,36,81,1) 100%);; */
+    --container-color: #17202A;
 
 
     /* Fuentes y tipografia */
@@ -93,6 +93,21 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(219,22,172,1);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:#17202A;    
+    border-radius: 10px;       
+    border: 3px solid rgba(219,22,172,1);  
+  }
+
+
 
 body,
 button,
@@ -103,7 +118,8 @@ textarea{
 }
 
 body{
-    background-color: var(--body-color);
+    background: rgb(7,35,180);
+    background: linear-gradient(100deg, rgba(7,35,180,1) 0%, rgba(219,22,172,1) 70%);
     color: var(--text-color);
 }
 
@@ -157,9 +173,10 @@ img{
 /* Layout */
 
 .container{
-    max-width: 968px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .grid{
@@ -173,15 +190,15 @@ img{
 
 .button{
     display: inline-block;
-    background-color: var(--title-color);
-    color: var(--container-color);
+    background-color: #17202A ;
+    color: #FBFCFC ;
     padding: 1.25rem 2rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);
 }
 
 .button:hover{
-    background-color: var(--title-color-dark);
+    background-color: #111111;
 }
 
 

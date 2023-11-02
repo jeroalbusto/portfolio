@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
 }
 
 .nav{
@@ -51,7 +50,7 @@
 
 
 .scroll-header{
-    box-shadow:  0 -1px 4px rgba(0, 0, 0, 0.15);
+    display: none;
 }
 
 
@@ -83,6 +82,7 @@
     /* mostrar el menu */
     .show-menu{
         bottom: 0;
+        background-color: rgb(7,35,180);
     }
 
 
@@ -106,7 +106,7 @@
     }
 
     .nav__close:hover{
-        color: var(--title-color-dark);
+        color: var(--container-color);
     }
 
     .nav__toggle{

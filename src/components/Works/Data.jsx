@@ -1,4 +1,4 @@
-import Work1 from "../../../public/mac.jpg"
+import Work1 from "../../assets/mac.jpg"
 
 export const projectsData = [
     {

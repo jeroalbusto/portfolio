@@ -22,8 +22,8 @@ const Backend = () => {
             <i class='bx bx-badge-check'></i>
 
             <div>
-                <h3 className="skills__name">Node Js</h3>
-                <span className="skills__level">Intermediate</span>
+                <h3 className="skills__name">symfony</h3>
+                <span className="skills__level">Basic</span>
             </div>
             </div>
 
@@ -32,8 +32,26 @@ const Backend = () => {
             <i class='bx bx-badge-check'></i>
 
             <div>
-                <h3 className="skills__name">Python</h3>
+                <h3 className="skills__name">Nodejs</h3>
                 <span className="skills__level">Intermediate</span>
+            </div>
+            </div>
+
+            <div className="skills__data">
+            <i class='bx bx-badge-check'></i>
+
+            <div>
+                <h3 className="skills__name">Express</h3>
+                <span className="skills__level">Intermediate</span>
+            </div>
+            </div>
+
+            <div className="skills__data">
+            <i class='bx bx-badge-check'></i>
+
+            <div>
+                <h3 className="skills__name">Nest.js</h3>
+                <span className="skills__level">Basic</span>
             </div>
             </div>
 
@@ -66,8 +84,26 @@ const Backend = () => {
             <i class='bx bx-badge-check'></i>
 
             <div>
-                <h3 className="skills__name">Azure</h3>
-                <span className="skills__level">Basic</span>
+                <h3 className="skills__name">Postgres</h3>
+                <span className="skills__level">Intermediate</span>
+            </div>
+            </div>
+
+            <div className="skills__data">
+            <i class='bx bx-badge-check'></i>
+
+            <div>
+                <h3 className="skills__name">Docker</h3>
+                <span className="skills__level">Intermediate</span>
+            </div>
+            </div>
+
+            <div className="skills__data">
+            <i class='bx bx-badge-check'></i>
+
+            <div>
+                <h3 className="skills__name">Typescript</h3>
+                <span className="skills__level">Intermediate</span>
             </div>
             </div>
 

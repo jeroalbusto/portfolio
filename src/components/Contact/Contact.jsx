@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
 
+  const [success, setSuccess] = useState(null);
+
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -14,6 +17,16 @@ const Contact = () => {
         "template_7vqwkoo",
         form.current,
         "BpIlfKvff6wl7G0Qe"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess(false);
+        }
       )
       e.target.reset()
   };
@@ -36,8 +49,8 @@ const Contact = () => {
                 jeroalbusto00@gmail.com
               </span>
 
-              <a href="" className="contact__button">
-                Write me{" "}
+              <a href="mailto:jeroalbusto00@gmail.com" className="contact__button">
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -48,20 +61,20 @@ const Contact = () => {
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">11 3332 7005</span>
 
-              <a href="" className="contact__button">
-                Write me{" "}
+              <a href="https://api.whatsapp.com/send?phone=1133327005" className="contact__button">
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
+              <i className="bx bxl-linkedin contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">user.fb123</span>
+              <h3 className="contact__card-title">Linkedin</h3>
+              <span className="contact__card-data">Jerónimo Albusto</span>
 
-              <a href="" className="contact__button">
-                Write me{" "}
+              <a href="https://www.linkedin.com/in/jerónimo-albusto/?messaging" target="_blank" className="contact__button">
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -114,14 +127,14 @@ const Contact = () => {
               >
                 <path
                   d="M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z"
-                  stroke="var(--container-color)"
+                  stroke="#FBFCFC"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M15.1999 9.12L9.41992 14.9"
-                  stroke="var(--container-color)"
+                  stroke="#FBFCFC"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -129,6 +142,7 @@ const Contact = () => {
               </svg>
             </button>
           </form>
+            {success && "Your message has been received !!!"}
         </div>
       </div>
     </section>

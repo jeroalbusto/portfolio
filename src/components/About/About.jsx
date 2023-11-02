@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../../public/coding2.png";
-import CV from "../../../public/cv-tecno.pdf";
+import AboutImg from "../../assets/coding2.png";
+import CV from "../../assets/cv-tecno.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -17,10 +17,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et facilis
-            quo nesciunt modi ex aut cupiditate cumque quaerat minima vitae
-            itaque sunt reiciendis, recusandae quasi magni expedita eius porro
-            quis.
+          ¡Hola! Soy Jerónimo Albusto, un apasionado y entusiasta desarrollador full-stack, me gustan los desafíos y retos por eso estoy constantemente aprendiendo nuevas tecnologías. Actualmente estoy trabajando con docker, mysql, prisma, typescript, node.js, react.js y next.js, pero también utilizo otras tecnologías como por ejemplo php, symfony, postgres, mongodb, etc.
           </p>
 
           <a download="" href={CV} className="button button--flex">
@@ -37,7 +34,7 @@ const About = () => {
               xml:space="preserve"
             >
               <path
-                fill="var(--container-color)"
+                fill="#FBFCFC"
                 fill-opacity="1"
                 stroke-width="0.2"
                 stroke-linejoin="round"
