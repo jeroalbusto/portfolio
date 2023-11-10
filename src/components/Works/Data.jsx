@@ -1,4 +1,5 @@
-import Work1 from "../../assets/mac.jpg"
+import landingPageImage from "/home/jeronimo-albusto/desarrollo/Portfolio-Website/src/assets/landig.png";
+import Work1 from "/home/jeronimo-albusto/desarrollo/Portfolio-Website/src/assets/mac.jpg"
 
 export const projectsData = [
     {
@@ -15,7 +16,7 @@ export const projectsData = [
     },
     {
         id:3,
-        image: Work1,
+        image: landingPageImage,
         title: 'design',
         category: 'design'
     },
