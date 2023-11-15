@@ -17,7 +17,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          ¡Hola! Soy Jerónimo Albusto, un apasionado y entusiasta desarrollador full-stack, me gustan los desafíos y retos por eso estoy constantemente aprendiendo nuevas tecnologías. Actualmente estoy trabajando con docker, mysql, prisma, typescript, node.js, react.js y next.js, pero también utilizo otras tecnologías como por ejemplo php, symfony, postgres, mongodb, etc.
+          ¡Hello! 👋 I am Jerónimo Albusto, a passionate and enthusiastic full-stack developer, I like challenges that is why I am constantly learning new technologies such as Kubernetes. I am currently working with docker, mysql, node.js and its express.js framework, react.js and its entire ecosystem, and vite.js as a project generator, but I also use other technologies such as php and its Laravel framework, postgres (sql), mongodb(no-sql), ORM like prism, etc.
           </p>
 
           <a download="" href={CV} className="button button--flex">
